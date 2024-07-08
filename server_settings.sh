@@ -2,11 +2,13 @@
 # Server Settings #
 ###################
 
+sudo apt update
+
 ## Users
 echo "Введите доменное имя формата [домен второго уровня.домен первого уровня]"
 read domain_name
 
-echo "Введите незанятый идентификатор"
+echo "Введите незанятый идентификатор. Например 100001"
 read group_user
 
 sudo groupadd -g $group_user $domain_name
